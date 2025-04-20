@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Somapuram Sahithi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1117;
+      --text: #e0e0e0;
+      --accent: #64ffda;
+      --card: #1c1f26;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Fira Code', monospace;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--accent);
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: #aaa;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: var(--bg);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--accent);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .about, .contact {
+      color: #bbb;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .skill {
+      background: var(--card);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 10px transparent;
+    }
+
+    .skill:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .project-card {
+      background: var(--card);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .education-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .edu-card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-left: 5px solid var(--accent);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(100, 255, 218, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .edu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 12px var(--accent);
+    }
+
+    .edu-card h3 {
+      margin-bottom: 0.3rem;
+      color: var(--accent);
+    }
+
+    .edu-card p {
+      margin: 0.2rem 0;
+      color: #ccc;
+    }
+
+    .contact p, .contact a {
+      margin: 0.5rem 0;
+      color: #aaa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .skills-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Somapuram Sahithi</h1>
+    <h2><span id="typed-text"></span><span class="cursor">|</span></h2>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="about">
+      <!-- Hello! I'm Sahithi, a creative and collaborative professional with a passion for coding, communication, and innovative problem-solving. I enjoy working in environments that encourage fresh ideas and creative thinking. Whether I’m building digital solutions or brainstorming with a team, I thrive on turning challenges into impactful outcomes. -->
+      <!-- <br><br> -->
+      <!-- Outside of work, I love cooking, exploring new places, and traveling. These hobbies keep me curious and open-minded, always bringing fresh perspectives to my work. -->
+      Hello! I'm Sahithi, a creative and collaborative professional with a passion for coding, communication, and innovative problem-solving. I enjoy working in environments that encourage fresh ideas and creative thinking, where I can apply both my technical skills and creativity to bring concepts to life. Whether I’m building digital solutions through coding or brainstorming with a team, I thrive on turning challenges into impactful outcomes.
+      <br><br>
+      Outside of work, I’m passionate about cooking, exploring new places, and traveling. These hobbies keep me curious and open-minded, inspiring me to bring new perspectives to my work. I’m always motivated to learn and grow, bringing positive energy and a creative approach to everything I do.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title">Coding Skills</h2>
+    <div class="skills-container">
+      <div class="skill">C</div>
+      <div class="skill">Java</div>
+      <div class="skill">Python</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">React</div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education-container">
+      <div class="edu-card">
+        <h3>DAV Public School</h3>
+        <p><strong>High School (CBSE)</strong></p>
+        <p>Scored 9.2 CGPA. Built a strong foundation in Science, Math, and Computer basics while actively participating in school clubs and competitions.</p>
+      </div>
+
+      <div class="edu-card">
+        <h3>Sri Chaitanya Junior College (Prathiba)</h3>
+        <p><strong>Intermediate (TSBIE)</strong> — 95%</p>
+        <p>Focused on Physics, Chemistry, and Mathematics. Developed analytical thinking and problem-solving skills preparing for competitive exams.</p>
+      </div>
+
+      <div class="edu-card">
+        <h3>G. Narayanamma Institute of Technology and Science</h3>
+        <p><strong>Bachelor of Technology in Computer Science</strong></p>
+        <p><strong>CGPA:</strong> 8.59</p>
+        <p>Currently pursuing my B.Tech in Computer Science. I've worked on multiple academic and personal projects, gaining experience in web development, databases, and software engineering fundamentals. I actively contribute to hackathons and tech fests hosted on campus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-card">
+      <h3>Inventory Management System</h3>
+      <img src="C:\Users\girag\OneDrive\Desktop\New folder\WhatsApp Image 2025-04-20 at 21.04.03.jpeg" alt="Inventory Management System" />
+      <p>This project helps small businesses manage their inventory by tracking stock, expiry dates, and identifying popular products. It has separate dashboards for managers and cashiers, ensuring efficient operations.</p>
+      <p><strong>Tech Used:</strong> SQL, PHP, CSS</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Constitution of India Game</h3>
+      <img src="C:\Users\girag\OneDrive\Desktop\New folder\download (1).jpeg" alt="Constitution of India Game" />
+      <p>An interactive learning tool that helps users understand the Indian Constitution through games, quizzes, and cartoons. It features basic and advanced modes to cater to different learning levels in a fun, engaging way.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" style="background: #1c1f26; padding: 4rem 2rem;">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact" style="text-align: center; color: #bbb;">
+      <p>If you'd like to get in touch or have any questions, feel free to reach out!</p>
+      
+      <!-- Contact Information -->
+      <div style="margin-bottom: 2rem;">
+        <p><strong>Email:</strong> <a href="mailto:sahithi@example.com" style="color: #64ffda;">sahithi@example.com</a></p>
+        <p><strong>Gmail:</strong> <a href="mailto:somapuramsahithi@gmail.com" style="color: #64ffda;">somapuramsahithi@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+1234567890" style="color: #64ffda;">+1 234 567 890</a></p>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="social-links" style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 3rem;">
+        <a href="https://www.linkedin.com/in/sahithi-somapuram-5a99152b7/" target="_blank" style="color: #64ffda; font-size: 1.5rem; text-decoration: none;">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/" target="_blank" style="color: #64ffda; font-size: 1.5rem; text-decoration: none;">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+  
+      <!-- Simple Contact Form -->
+      <form action="#" method="POST" style="display: flex; flex-direction: column; align-items: center; gap: 1rem; max-width: 400px; margin: 0 auto; padding: 2rem; background: #2a2f39; border-radius: 8px;">
+        <label for="name" style="color: #bbb;">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required style="padding: 0.8rem; width: 100%; border: 1px solid #444; background: #333; color: #fff; border-radius: 5px;">
+  
+        <label for="email" style="color: #bbb;">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required style="padding: 0.8rem; width: 100%; border: 1px solid #444; background: #333; color: #fff; border-radius: 5px;">
+  
+        <label for="message" style="color: #bbb;">Your Message</label>
+        <textarea id="message" name="message" placeholder="Write your message" required style="padding: 0.8rem; width: 100%; height: 120px; border: 1px solid #444; background: #333; color: #fff; border-radius: 5px;"></textarea>
+  
+        <button type="submit" style="background-color: #64ffda; color: #000; padding: 1rem 2rem; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Font Awesome CDN for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+
+  <!-- Typing Animation Script -->
+  <script>
+    const typedText = document.getElementById("typed-text");
+    const roles = ["Coder", "Web Developer", "Problem Solver", "Tech Enthusiast"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      const current = roles[roleIndex];
+      const speed = isDeleting ? 50 : 100;
+
+      typedText.textContent = current.substring(0, charIndex);
+
+      if (!isDeleting && charIndex < current.length) {
+        charIndex++;
+        setTimeout(typeEffect, speed);
+      } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(typeEffect, speed);
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) {
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+        setTimeout(typeEffect, 800);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", typeEffect);
+  </script>
+</body>
+</html>
